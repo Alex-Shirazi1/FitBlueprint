@@ -10,12 +10,6 @@ import UIKit
 
 protocol HomeRouterProtocol: AnyObject {
     static func createModule(navigationController: UINavigationController) -> UIViewController
-    
-    func navigateToFeedback()
-    
-    func navigateToAbout()
-    
-    func navigateToTerms()
 }
 
 class HomeRouter: HomeRouterProtocol {
@@ -31,16 +25,4 @@ class HomeRouter: HomeRouterProtocol {
         return viewController
     }
     
-    func navigateToFeedback() {
-        //let feedbackModule = FeedbackRouter.createModule()
-       // navigationController?.pushViewController(feedbackModule, animated: true)
-    }
-    func navigateToAbout() {
-       // let aboutViewController = AboutViewController()
-        //navigationController?.pushViewController(aboutViewController, animated: true)
-    }
-    func navigateToTerms() {
-        //let termsViewController = TermsViewController()
-        //navigationController?.pushViewController(termsViewController, animated: true)
-    }
 }
