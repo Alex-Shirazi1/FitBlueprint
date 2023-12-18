@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C45FCD22B3101B600465EC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD12B3101B600465EC0 /* HomeViewController.swift */; };
+		5C45FCD42B3101C800465EC0 /* HomeEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD32B3101C800465EC0 /* HomeEventHandler.swift */; };
+		5C45FCD62B3101D100465EC0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD52B3101D100465EC0 /* HomeInteractor.swift */; };
+		5C45FCD82B3101D900465EC0 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD72B3101D900465EC0 /* HomeRouter.swift */; };
+		5C45FCDA2B3101E000465EC0 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD92B3101E000465EC0 /* HomeDataManager.swift */; };
 		5C4E51112B2B994F00061F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51102B2B994F00061F67 /* AppDelegate.swift */; };
 		5C4E51132B2B994F00061F67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51122B2B994F00061F67 /* SceneDelegate.swift */; };
 		5C4E51152B2B994F00061F67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51142B2B994F00061F67 /* ViewController.swift */; };
@@ -37,6 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C45FCD12B3101B600465EC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5C45FCD32B3101C800465EC0 /* HomeEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventHandler.swift; sourceTree = "<group>"; };
+		5C45FCD52B3101D100465EC0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		5C45FCD72B3101D900465EC0 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		5C45FCD92B3101E000465EC0 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
 		5C4E510D2B2B994F00061F67 /* FitBlueprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBlueprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4E51102B2B994F00061F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C4E51122B2B994F00061F67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +89,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C45FCD02B31019E00465EC0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5C45FCD12B3101B600465EC0 /* HomeViewController.swift */,
+				5C45FCD32B3101C800465EC0 /* HomeEventHandler.swift */,
+				5C45FCD52B3101D100465EC0 /* HomeInteractor.swift */,
+				5C45FCD72B3101D900465EC0 /* HomeRouter.swift */,
+				5C45FCD92B3101E000465EC0 /* HomeDataManager.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		5C4E51042B2B994F00061F67 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +138,7 @@
 		5C4E51242B2B9AB200061F67 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5C45FCD02B31019E00465EC0 /* Home */,
 				5C4E513F2B2B9BEF00061F67 /* SettingsModules */,
 				5C4E51252B2B9AC700061F67 /* Settings */,
 			);
@@ -252,13 +275,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C45FCDA2B3101E000465EC0 /* HomeDataManager.swift in Sources */,
+				5C45FCD22B3101B600465EC0 /* HomeViewController.swift in Sources */,
 				5C4E513D2B2B9B6000061F67 /* FeedbackData.swift in Sources */,
 				5C4E51152B2B994F00061F67 /* ViewController.swift in Sources */,
 				5C4E514B2B2B9BEF00061F67 /* FeedbackViewController.swift in Sources */,
 				5C4E51392B2B9B6000061F67 /* Login.swift in Sources */,
 				5C4E513A2B2B9B6000061F67 /* TableOption.swift in Sources */,
+				5C45FCD62B3101D100465EC0 /* HomeInteractor.swift in Sources */,
 				5C4E51112B2B994F00061F67 /* AppDelegate.swift in Sources */,
 				5C4E51502B2B9BEF00061F67 /* BannerViewController.swift in Sources */,
+				5C45FCD82B3101D900465EC0 /* HomeRouter.swift in Sources */,
+				5C45FCD42B3101C800465EC0 /* HomeEventHandler.swift in Sources */,
 				5C4E512B2B2B9AC700061F67 /* SettingsEventHandler.swift in Sources */,
 				5C4E514E2B2B9BEF00061F67 /* FeedbackInteractor.swift in Sources */,
 				5C4E51312B2B9B0500061F67 /* TableViewCellFactory.swift in Sources */,

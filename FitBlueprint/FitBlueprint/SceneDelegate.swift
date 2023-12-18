@@ -40,6 +40,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     private func createViewControllers() -> [UIViewController] {
 
+        // Home Module Logic
+        
+        let homeNavigationController = UINavigationController()
+        let homeViewController = HomeRouter.createModule(navigationController: homeNavigationController)
+        homeNavigationController.viewControllers = [homeViewController]
+        homeNavigationController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 1)
         // Settings Module Logic
         
         let settingsNavigationController = UINavigationController()
@@ -47,16 +53,44 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         settingsNavigationController.viewControllers = [settingsViewController]
         settingsNavigationController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 4)
         
-        return [settingsNavigationController]
+        return [homeNavigationController, settingsNavigationController]
     }
 
     private func tabbar(controllers: [UIViewController]) -> UITabBarController {
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = controllers
         tabBarController.tabBar.isTranslucent = false
-        tabBarController.tabBar.barTintColor = .black
+
+        // Set barTintColor based on the user interface style
+            tabBarController.tabBar.barTintColor = UIColor { traitCollection -> UIColor in
+                switch traitCollection.userInterfaceStyle {
+                    case .dark:
+                        return .black
+                    default:
+                        return .white
+                }
+            }
+      
+        
+        // Set divider (shadowImage) to the top of the tab bar
+        tabBarController.tabBar.shadowImage = UIImage() // Clear image for the shadow
+        tabBarController.tabBar.backgroundImage = UIImage() // Clear image for the background
+   
+            let dividerColor = UIColor { traitCollection -> UIColor in
+                switch traitCollection.userInterfaceStyle {
+                    case .dark:
+                        return .white // White divider for dark mode
+                    default:
+                        return .black // Black divider for light mode
+                }
+            }
+            tabBarController.tabBar.standardAppearance.shadowColor = dividerColor
+
+                tabBarController.tabBar.scrollEdgeAppearance = tabBarController.tabBar.standardAppearance
+            
         return tabBarController
     }
+
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
