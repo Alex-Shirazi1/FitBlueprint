@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0117912B3372D4008753F3 /* FitBlueprintWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0117902B3372D4008753F3 /* FitBlueprintWatchApp.swift */; };
+		5C0117932B3372D4008753F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0117922B3372D4008753F3 /* ContentView.swift */; };
+		5C0117952B3372D5008753F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0117942B3372D5008753F3 /* Assets.xcassets */; };
+		5C0117982B3372D5008753F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0117972B3372D5008753F3 /* Preview Assets.xcassets */; };
+		5C01179B2B3372D5008753F3 /* FitBlueprintWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5C01178E2B3372D4008753F3 /* FitBlueprintWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5C45FCD22B3101B600465EC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD12B3101B600465EC0 /* HomeViewController.swift */; };
 		5C45FCD42B3101C800465EC0 /* HomeEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD32B3101C800465EC0 /* HomeEventHandler.swift */; };
 		5C45FCD62B3101D100465EC0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD52B3101D100465EC0 /* HomeInteractor.swift */; };
@@ -41,7 +46,36 @@
 		5C4E51532B2B9C0300061F67 /* MainConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51522B2B9C0300061F67 /* MainConfig.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5C0117992B3372D5008753F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C4E51052B2B994F00061F67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C01178D2B3372D4008753F3;
+			remoteInfo = "FitBlueprintWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C01179C2B3372D5008753F3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5C01179B2B3372D5008753F3 /* FitBlueprintWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5C01178E2B3372D4008753F3 /* FitBlueprintWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitBlueprintWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0117902B3372D4008753F3 /* FitBlueprintWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBlueprintWatchApp.swift; sourceTree = "<group>"; };
+		5C0117922B3372D4008753F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C0117942B3372D5008753F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C0117972B3372D5008753F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C45FCD12B3101B600465EC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5C45FCD32B3101C800465EC0 /* HomeEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventHandler.swift; sourceTree = "<group>"; };
 		5C45FCD52B3101D100465EC0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -79,6 +113,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5C01178B2B3372D4008753F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C4E510A2B2B994F00061F67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,6 +130,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C01178F2B3372D4008753F3 /* FitBlueprintWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				5C0117902B3372D4008753F3 /* FitBlueprintWatchApp.swift */,
+				5C0117922B3372D4008753F3 /* ContentView.swift */,
+				5C0117942B3372D5008753F3 /* Assets.xcassets */,
+				5C0117962B3372D5008753F3 /* Preview Content */,
+			);
+			path = "FitBlueprintWatch Watch App";
+			sourceTree = "<group>";
+		};
+		5C0117962B3372D5008753F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5C0117972B3372D5008753F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		5C45FCD02B31019E00465EC0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				5C4E510F2B2B994F00061F67 /* FitBlueprint */,
+				5C01178F2B3372D4008753F3 /* FitBlueprintWatch Watch App */,
 				5C4E510E2B2B994F00061F67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				5C4E510D2B2B994F00061F67 /* FitBlueprint.app */,
+				5C01178E2B3372D4008753F3 /* FitBlueprintWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +269,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C01178D2B3372D4008753F3 /* FitBlueprintWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C01179F2B3372D5008753F3 /* Build configuration list for PBXNativeTarget "FitBlueprintWatch Watch App" */;
+			buildPhases = (
+				5C01178A2B3372D4008753F3 /* Sources */,
+				5C01178B2B3372D4008753F3 /* Frameworks */,
+				5C01178C2B3372D4008753F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FitBlueprintWatch Watch App";
+			productName = "FitBlueprintWatch Watch App";
+			productReference = 5C01178E2B3372D4008753F3 /* FitBlueprintWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5C4E510C2B2B994F00061F67 /* FitBlueprint */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C4E51212B2B995000061F67 /* Build configuration list for PBXNativeTarget "FitBlueprint" */;
@@ -214,10 +293,12 @@
 				5C4E51092B2B994F00061F67 /* Sources */,
 				5C4E510A2B2B994F00061F67 /* Frameworks */,
 				5C4E510B2B2B994F00061F67 /* Resources */,
+				5C01179C2B3372D5008753F3 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5C01179A2B3372D5008753F3 /* PBXTargetDependency */,
 			);
 			name = FitBlueprint;
 			productName = FitBlueprint;
@@ -234,6 +315,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					5C01178D2B3372D4008753F3 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					5C4E510C2B2B994F00061F67 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -253,11 +337,21 @@
 			projectRoot = "";
 			targets = (
 				5C4E510C2B2B994F00061F67 /* FitBlueprint */,
+				5C01178D2B3372D4008753F3 /* FitBlueprintWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5C01178C2B3372D4008753F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0117982B3372D5008753F3 /* Preview Assets.xcassets in Resources */,
+				5C0117952B3372D5008753F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C4E510B2B2B994F00061F67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,6 +365,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C01178A2B3372D4008753F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0117932B3372D4008753F3 /* ContentView.swift in Sources */,
+				5C0117912B3372D4008753F3 /* FitBlueprintWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C4E51092B2B994F00061F67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +412,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5C01179A2B3372D5008753F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C01178D2B3372D4008753F3 /* FitBlueprintWatch Watch App */;
+			targetProxy = 5C0117992B3372D5008753F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		5C4E51162B2B994F00061F67 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -329,6 +440,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5C01179D2B3372D5008753F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitBlueprintWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = NP96938VJW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitBlueprintWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "Alex-S.FitBlueprint";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-S.FitBlueprint.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		5C01179E2B3372D5008753F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitBlueprintWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = NP96938VJW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitBlueprintWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "Alex-S.FitBlueprint";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Alex-S.FitBlueprint.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		5C4E511F2B2B995000061F67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,6 +622,7 @@
 		5C4E51222B2B995000061F67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -479,6 +651,7 @@
 		5C4E51232B2B995000061F67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,6 +680,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C01179F2B3372D5008753F3 /* Build configuration list for PBXNativeTarget "FitBlueprintWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C01179D2B3372D5008753F3 /* Debug */,
+				5C01179E2B3372D5008753F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5C4E51082B2B994F00061F67 /* Build configuration list for PBXProject "FitBlueprint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
