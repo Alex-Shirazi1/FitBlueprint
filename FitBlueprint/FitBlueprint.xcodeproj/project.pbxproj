@@ -13,6 +13,12 @@
 		5C0117982B3372D5008753F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0117972B3372D5008753F3 /* Preview Assets.xcassets */; };
 		5C01179B2B3372D5008753F3 /* FitBlueprintWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5C01178E2B3372D4008753F3 /* FitBlueprintWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5C0117A12B338AC0008753F3 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0117A02B338AC0008753F3 /* WorkoutListView.swift */; };
+		5C0117A42B33DF2D008753F3 /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0117A32B33DF2D008753F3 /* DesignViewController.swift */; };
+		5C0117A62B33DF36008753F3 /* DesignEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0117A52B33DF36008753F3 /* DesignEventHandler.swift */; };
+		5C0117A82B33DF3F008753F3 /* DesignInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0117A72B33DF3F008753F3 /* DesignInteractor.swift */; };
+		5C0117AA2B33DF46008753F3 /* DesignRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0117A92B33DF46008753F3 /* DesignRouter.swift */; };
+		5C0117AC2B33DF4C008753F3 /* DesignDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0117AB2B33DF4C008753F3 /* DesignDataManager.swift */; };
+		5C0117B32B33E30C008753F3 /* MetricsPickerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0117B22B33E30C008753F3 /* MetricsPickerFactory.swift */; };
 		5C45FCD22B3101B600465EC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD12B3101B600465EC0 /* HomeViewController.swift */; };
 		5C45FCD42B3101C800465EC0 /* HomeEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD32B3101C800465EC0 /* HomeEventHandler.swift */; };
 		5C45FCD62B3101D100465EC0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C45FCD52B3101D100465EC0 /* HomeInteractor.swift */; };
@@ -29,7 +35,6 @@
 		5C4E512D2B2B9AC700061F67 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51282B2B9AC700061F67 /* SettingsInteractor.swift */; };
 		5C4E512E2B2B9AC700061F67 /* SettingsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51292B2B9AC700061F67 /* SettingsDataManager.swift */; };
 		5C4E512F2B2B9AC700061F67 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E512A2B2B9AC700061F67 /* SettingsViewController.swift */; };
-		5C4E51312B2B9B0500061F67 /* TableViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51302B2B9B0500061F67 /* TableViewCellFactory.swift */; };
 		5C4E51392B2B9B6000061F67 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51332B2B9B6000061F67 /* Login.swift */; };
 		5C4E513A2B2B9B6000061F67 /* TableOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51342B2B9B6000061F67 /* TableOption.swift */; };
 		5C4E513B2B2B9B6000061F67 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51352B2B9B6000061F67 /* Register.swift */; };
@@ -45,6 +50,8 @@
 		5C4E51502B2B9BEF00061F67 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51482B2B9BEF00061F67 /* BannerViewController.swift */; };
 		5C4E51512B2B9BEF00061F67 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51492B2B9BEF00061F67 /* AboutViewController.swift */; };
 		5C4E51532B2B9C0300061F67 /* MainConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E51522B2B9C0300061F67 /* MainConfig.swift */; };
+		5CA71ABB2B354C4100CA3F7B /* watch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA71ABA2B354C4100CA3F7B /* watch.png */; };
+		5CA71ABD2B3567DE00CA3F7B /* TableViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA71ABC2B3567DE00CA3F7B /* TableViewCellFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +85,12 @@
 		5C0117942B3372D5008753F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C0117972B3372D5008753F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C0117A02B338AC0008753F3 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
+		5C0117A32B33DF2D008753F3 /* DesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignViewController.swift; sourceTree = "<group>"; };
+		5C0117A52B33DF36008753F3 /* DesignEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignEventHandler.swift; sourceTree = "<group>"; };
+		5C0117A72B33DF3F008753F3 /* DesignInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignInteractor.swift; sourceTree = "<group>"; };
+		5C0117A92B33DF46008753F3 /* DesignRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignRouter.swift; sourceTree = "<group>"; };
+		5C0117AB2B33DF4C008753F3 /* DesignDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignDataManager.swift; sourceTree = "<group>"; };
+		5C0117B22B33E30C008753F3 /* MetricsPickerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsPickerFactory.swift; sourceTree = "<group>"; };
 		5C45FCD12B3101B600465EC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5C45FCD32B3101C800465EC0 /* HomeEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventHandler.swift; sourceTree = "<group>"; };
 		5C45FCD52B3101D100465EC0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -96,7 +109,6 @@
 		5C4E51282B2B9AC700061F67 /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		5C4E51292B2B9AC700061F67 /* SettingsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDataManager.swift; sourceTree = "<group>"; };
 		5C4E512A2B2B9AC700061F67 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		5C4E51302B2B9B0500061F67 /* TableViewCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCellFactory.swift; path = "../../../Recipe-App/IOS_Client/IOS_Client/Factories/TableViewCellFactory.swift"; sourceTree = "<group>"; };
 		5C4E51332B2B9B6000061F67 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		5C4E51342B2B9B6000061F67 /* TableOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOption.swift; sourceTree = "<group>"; };
 		5C4E51352B2B9B6000061F67 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -112,6 +124,8 @@
 		5C4E51482B2B9BEF00061F67 /* BannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		5C4E51492B2B9BEF00061F67 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5C4E51522B2B9C0300061F67 /* MainConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainConfig.swift; path = "../../../Recipe-App/IOS_Client/IOS_Client/Configuration/MainConfig.swift"; sourceTree = "<group>"; };
+		5CA71ABA2B354C4100CA3F7B /* watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = watch.png; path = ../../../../../../Downloads/watch.png; sourceTree = "<group>"; };
+		5CA71ABC2B3567DE00CA3F7B /* TableViewCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +166,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5C0117A22B33DF1E008753F3 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				5CA71ABA2B354C4100CA3F7B /* watch.png */,
+				5C0117A32B33DF2D008753F3 /* DesignViewController.swift */,
+				5C0117A52B33DF36008753F3 /* DesignEventHandler.swift */,
+				5C0117A72B33DF3F008753F3 /* DesignInteractor.swift */,
+				5C0117A92B33DF46008753F3 /* DesignRouter.swift */,
+				5C0117AB2B33DF4C008753F3 /* DesignDataManager.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		5C0117AD2B33E2E9008753F3 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				5CA71ABC2B3567DE00CA3F7B /* TableViewCellFactory.swift */,
+				5C0117B22B33E30C008753F3 /* MetricsPickerFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		5C45FCD02B31019E00465EC0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +221,8 @@
 		5C4E510F2B2B994F00061F67 /* FitBlueprint */ = {
 			isa = PBXGroup;
 			children = (
+				5CA71AB62B35489A00CA3F7B /* Resources */,
+				5C0117AD2B33E2E9008753F3 /* Factories */,
 				5C4E51322B2B9B6000061F67 /* Models */,
 				5C4E51242B2B9AB200061F67 /* Modules */,
 				5C4E51102B2B994F00061F67 /* AppDelegate.swift */,
@@ -195,7 +233,6 @@
 				5C4E51192B2B995000061F67 /* Assets.xcassets */,
 				5C4E511B2B2B995000061F67 /* LaunchScreen.storyboard */,
 				5C4E511E2B2B995000061F67 /* Info.plist */,
-				5C4E51302B2B9B0500061F67 /* TableViewCellFactory.swift */,
 			);
 			path = FitBlueprint;
 			sourceTree = "<group>";
@@ -203,6 +240,7 @@
 		5C4E51242B2B9AB200061F67 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5C0117A22B33DF1E008753F3 /* Design */,
 				5C45FCD02B31019E00465EC0 /* Home */,
 				5C4E513F2B2B9BEF00061F67 /* SettingsModules */,
 				5C4E51252B2B9AC700061F67 /* Settings */,
@@ -267,6 +305,13 @@
 				5C4E51482B2B9BEF00061F67 /* BannerViewController.swift */,
 			);
 			path = HelperModules;
+			sourceTree = "<group>";
+		};
+		5CA71AB62B35489A00CA3F7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +407,7 @@
 				5C4E511D2B2B995000061F67 /* LaunchScreen.storyboard in Resources */,
 				5C4E511A2B2B995000061F67 /* Assets.xcassets in Resources */,
 				5C4E51182B2B994F00061F67 /* Main.storyboard in Resources */,
+				5CA71ABB2B354C4100CA3F7B /* watch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,23 +430,29 @@
 			files = (
 				5C45FCDA2B3101E000465EC0 /* HomeDataManager.swift in Sources */,
 				5C45FCD22B3101B600465EC0 /* HomeViewController.swift in Sources */,
+				5C0117A62B33DF36008753F3 /* DesignEventHandler.swift in Sources */,
 				5C4E513D2B2B9B6000061F67 /* FeedbackData.swift in Sources */,
 				5C4E51152B2B994F00061F67 /* ViewController.swift in Sources */,
+				5C0117AA2B33DF46008753F3 /* DesignRouter.swift in Sources */,
 				5C4E514B2B2B9BEF00061F67 /* FeedbackViewController.swift in Sources */,
+				5C0117A82B33DF3F008753F3 /* DesignInteractor.swift in Sources */,
 				5C4E51392B2B9B6000061F67 /* Login.swift in Sources */,
 				5C4E513A2B2B9B6000061F67 /* TableOption.swift in Sources */,
 				5C45FCD62B3101D100465EC0 /* HomeInteractor.swift in Sources */,
 				5C4E51112B2B994F00061F67 /* AppDelegate.swift in Sources */,
+				5CA71ABD2B3567DE00CA3F7B /* TableViewCellFactory.swift in Sources */,
 				5C4E51502B2B9BEF00061F67 /* BannerViewController.swift in Sources */,
 				5C45FCD82B3101D900465EC0 /* HomeRouter.swift in Sources */,
 				5C45FCD42B3101C800465EC0 /* HomeEventHandler.swift in Sources */,
 				5C4E512B2B2B9AC700061F67 /* SettingsEventHandler.swift in Sources */,
 				5C4E514E2B2B9BEF00061F67 /* FeedbackInteractor.swift in Sources */,
-				5C4E51312B2B9B0500061F67 /* TableViewCellFactory.swift in Sources */,
 				5C4E514C2B2B9BEF00061F67 /* FeedbackDataManager.swift in Sources */,
+				5C0117AC2B33DF4C008753F3 /* DesignDataManager.swift in Sources */,
 				5C4E513B2B2B9B6000061F67 /* Register.swift in Sources */,
 				5C4E514D2B2B9BEF00061F67 /* FeedbackRouter.swift in Sources */,
+				5C0117A42B33DF2D008753F3 /* DesignViewController.swift in Sources */,
 				5C4E51132B2B994F00061F67 /* SceneDelegate.swift in Sources */,
+				5C0117B32B33E30C008753F3 /* MetricsPickerFactory.swift in Sources */,
 				5C4E51532B2B9C0300061F67 /* MainConfig.swift in Sources */,
 				5C4E513E2B2B9B6000061F67 /* Post.swift in Sources */,
 				5C4E512C2B2B9AC700061F67 /* SettingsRouter.swift in Sources */,

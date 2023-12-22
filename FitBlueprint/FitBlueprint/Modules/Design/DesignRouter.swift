@@ -20,7 +20,7 @@ class DesignRouter: DesignRouterProtocol {
         let router: DesignRouter = DesignRouter()
         router.navigationController = navigationController
         let eventHandler: DesignEventHandlerProtocol = DesignEventHandler(interactor: interactor, router: router)
-        let viewController = DesignViewController(eventHandler: eventHandler)
+        let viewController = DesignViewController(eventHandler: eventHandler, metricsPickerFactory: MetricsPickerFactory())
         eventHandler.viewController = viewController
         return viewController
     }
