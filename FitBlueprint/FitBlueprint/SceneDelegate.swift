@@ -46,6 +46,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let homeViewController = HomeRouter.createModule(navigationController: homeNavigationController)
         homeNavigationController.viewControllers = [homeViewController]
         homeNavigationController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 1)
+        
+        // Design Module Logic
+        
+        let designNavigationController = UINavigationController()
+        let designViewController = DesignRouter.createModule(navigationController: designNavigationController)
+        designNavigationController.viewControllers = [designViewController]
+        designNavigationController.tabBarItem = UITabBarItem(title: "Design", image: UIImage(systemName: "plus"), tag: 2)
+        
         // Settings Module Logic
         
         let settingsNavigationController = UINavigationController()
@@ -53,7 +61,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         settingsNavigationController.viewControllers = [settingsViewController]
         settingsNavigationController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 4)
         
-        return [homeNavigationController, settingsNavigationController]
+        return [homeNavigationController,designNavigationController, settingsNavigationController]
     }
 
     private func tabbar(controllers: [UIViewController]) -> UITabBarController {
